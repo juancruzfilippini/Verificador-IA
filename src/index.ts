@@ -115,6 +115,15 @@ async function callDetectorApi(payload: DetectorRequest) {
   return response.json();
 }
 
+app.get('/api/health', (_req: Request, res: Response) => {
+  res.json({
+    ok: true,
+    status: 'API funcionando',
+    timestamp: new Date().toISOString(),
+  });
+});
+
+
 app.post('/api/analyze', async (req: Request, res: Response) => {
   const parseResult = detectorRequestSchema.safeParse(req.body);
 
