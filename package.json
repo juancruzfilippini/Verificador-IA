@@ -1,7 +1,7 @@
 {
   "name": "verificador-ia",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
@@ -21,7 +21,7 @@
     "url": "https://github.com/juancruzfilippini/Verificador-IA/issues"
   },
   "homepage": "https://github.com/juancruzfilippini/Verificador-IA#readme",
-  "description": "",
+  "description": "API de verificación que consume un detector de IA externo.",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
